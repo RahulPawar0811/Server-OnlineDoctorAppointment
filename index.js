@@ -12,7 +12,8 @@ const PORT = process.env.PORT || 3000;
 
 // ✅ Corrected CORS for frontend communication with credentials
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  //origin: 'http://localhost:3000',
+  origin:"https://client-online-doctor-appointment.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOptions));
